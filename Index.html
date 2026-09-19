@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código CTQ - Oficial</title>
+    <!-- Injeta o Tailwind CSS direto da rede para o design ficar Premium Dark Mode -->
+    <script src="https://tailwindcss.com"></script>
+    <style>
+        /* Desativa a seleção de texto para o lead não copiar sua copy */
+        body { -webkit-user-select: none; user-select: none; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white font-sans min-h-screen flex flex-col items-center">
+
+    <!-- BANNER DE URGÊNCIA MÁXIMA NO TOPO -->
+    <div class="w-full bg-orange-600 text-black text-xs md:text-sm font-black py-2.5 px-4 text-center uppercase tracking-widest sticky top-0 z-50 shadow-[0_4px_20px_rgba(234,88,12,0.3)]">
+        🔥 ATENÇÃO: Esse vídeo sai do ar HOJE, 19/09/2026 (SÁBADO)!
+    </div>
+
+    <div class="max-w-xl w-full mx-auto px-4 py-8 text-center flex-1 flex flex-col justify-center my-auto">
+        
+        <!-- HEADLINE MAGNÉTICA DO TOPO -->
+        <h1 class="text-xl md:text-2xl font-black tracking-tight uppercase mb-6 leading-tight max-w-sm mx-auto">
+            Como desligar o "Modo Sobrevivência" que sabota sua queima na madrugada em <span className="text-orange-500 text-orange-500">3 minutos</span>
+        </h1>
+
+        <!-- 🔒 CONTAINER DO PLAYER VERTICAL BLINDADO (PADRÃO REELS/SHORTS 9:16) -->
+        <div class="relative w-full aspect-[9/16] max-w-[320px] mx-auto rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-[0_0_50px_rgba(0,0,0,0.8)] mb-6">
+            
+            <!-- CAMADA INVISÍVEL ANTI-TOUCH (TRANCADOR DE CLIQUES E PAUSAS) -->
+            <div class="absolute inset-0山区 z-30 bg-transparent cursor-default h-full w-full"></div>
+
+            <!-- PLAYER DO SHORTS CORRIGIDO E BLINDADO -->
+            <iframe
+                class="w-full h-full relative z-10 scale-[1.01]"
+                src="https://youtube.com"
+                title="Video Sales Letter"
+                allow="autoplay; encrypted-media"
+                frameborder="0">
+            </iframe>
+        </div>
+
+        <p class="text-zinc-500 text-xs tracking-wide animate-pulse mb-8 flex items-center justify-center gap-1.5 font-medium">
+            🔊 Certifique-se de que o seu som está ligado
+        </p>
+
+        <!-- 🛒 SEÇÃO OCULTA DINÂMICA (DELAY AUTOMÁTICO VIA JAVASCRIPT PURO) -->
+        <div id="vsl-offer" class="opacity-0 scale-95 max-h-0 hidden transition-all duration-1000 transform origin-bottom">
+            <div class="bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-orange-500/40 p-6 rounded-3xl shadow-[0_0_40px_rgba(249,115,22,0.15)] text-center max-w-sm mx-auto mb-4">
+                
+                <div class="inline-block bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                    ⚡ Lote de Encerramento
+                </div>
+                
+                <p class="text-zinc-400 text-xs leading-relaxed max-w-[260px] mx-auto mb-4">
+                    Valor promocional exclusivo para as <span class="text-white font-bold">últimas vagas</span> de ativação do aplicativo de cabeceira.
+                </p>
+
+                <!-- CONTRASTE DE VALOR FINANCEIRO -->
+                <div class="space-y-1 mb-5">
+                    <p class="text-zinc-500 text-sm line-through font-medium">De R$ 645,00</p>
+                    <p class="text-zinc-500 text-xs uppercase tracking-widest font-black text-orange-400">Por apenas</p>
+                    <p class="text-4xl font-black text-white tracking-tight">R$ 197,00</p>
+                    <p class="text-emerald-400 font-extrabold text-xs bg-emerald-500/5 py-1 px-3 rounded-lg inline-block border border-emerald-500/10 mt-2">
+                        💰 Você economiza R$ 448,00 à vista
+                    </p>
+                </div>
+
+                <!-- TAG DE URGÊNCIA CONECTADA ÀS VAGAS -->
+                <div class="bg-red-950/30 border border-red-500/20 p-3 rounded-xl mb-6">
+                    <p class="text-red-400 font-black text-xs uppercase tracking-wide animate-pulse">
+                        🚨 VALOR PROMOCIONAL DE ENCERRAMENTO DE VAGAS. ACABA HOJE, DEPOIS NÃO TEM MAIS.
+                    </p>
+                </div>
+
+                <!-- BOTÃO DE CHECKOUT DA KIWIFY -->
+                <a 
+                  href="https://zuckpay.com.br" 
+                  class="bg-orange-500 text-black hover:bg-orange-600 font-black py-4 px-6 rounded-2xl w-full text-center tracking-wide transition-all block shadow-[0_0_30px_rgba(249,115,22,0.3)] text-base uppercase active:scale-95"
+                >
+                  Ativar Código CTQ Agora
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT DO CRONÔMETRO DE DELAY (75 SEGUNDOS) -->
+    <script>
+        const DELAY_IN_SECONDS = 75;
+        setTimeout(() => {
+            const offerSection = document.getElementById('vsl-offer');
+            if (offerSection) {
+                offerSection.classList.remove('hidden', 'opacity-0', 'scale-95', 'max-h-0');
+                offerSection.classList.add('opacity-100', 'scale-100', 'visible');
+            }
+        }, DELAY_IN_SECONDS * 1000);
+    </script>
+</body>
+</html>
